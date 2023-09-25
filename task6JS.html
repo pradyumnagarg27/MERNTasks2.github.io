@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #F0ECEC;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 94%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .btn-login {
+            background-color: #007bff;
+            color: #fff;
+	    width: 100%;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+ 	    font-size:20px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: #007bff;
+	    margin-left: 74px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: Garamond, serif;font-size:45px;"><i>Instagram</i></h1>
+        <form>
+            <input type="text" id="username" name="username" placeholder="Username" style="font-size:20px;" required>
+            <input type="password" id="password" name="password" placeholder="Password" style="font-size:20px;" required>
+            <button type="submit" class="btn-login"><b>Log in</b></button><br><br>
+	    <table><tr><td>
+            <label>
+                <input type="checkbox" id="rememberMe" name="rememberMe"> Remember me
+            </label></td>
+            <td><a href="#" class="forgot-password">Forgot Password?</a></td></tr></table>
+        </form>
+    </div>
+    <center><p>Don't have an account! <font color="#007bff">Sign up here.</font></p></center>
+</body>
+</html>

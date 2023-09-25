@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task 2</title>
+</head>
+<body>
+    <h1>JavaScript Function That Returns A Passed String With Letters In Alphabetical Order</h1>
+    
+    <label for="stringInput">Enter A String :</label>
+    <input type="text" id="stringInput">
+    <button onclick="sortString()">Arrange In Alphabetical Order</button>
+    
+    <p>String In Alphabetical Order : <span id="result"></span></p>
+
+    <script>
+        function sortString() {
+            var inputString = document.getElementById("stringInput").value;
+
+            var sortedString = inputString.split('').sort().join('');
+            
+            document.getElementById("result").textContent = sortedString;
+        }
+    </script>
+</body>
+</html>

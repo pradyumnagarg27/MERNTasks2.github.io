@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+	    font-family: Times New Roman;
+        }
+        #mainBox{
+            width:40%;
+            height:935px;
+	    margin-top: 30px;
+	    margin-bottom: 30px;
+            padding:10px;
+            border-radius:10px;
+            background:linear-gradient(to bottom, #ffffcc 0%, #e182e1 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <div id="mainBox">
+    <center><h3><font color="#0039F6"><b>Registration form</b></font></h3></center><br>
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"><b>First Name</b></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Last Name</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"><b>Email</b></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Password</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Re-enter Password</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+	    <table>
+            <tr><th rowspan="2"><label>Gender</label></th>
+            <td width="90%"><input type="radio" name="gender" style="margin-left:30px;"><label for="male" style="margin-left:5px;"> Male</label></td></tr>
+            <tr><td><input type="radio" name="gender" style="margin-left:30px;"><label for="female" style="margin-left:5px;"> Female</label></td></tr>
+	    </table><br>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Age</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Phone Number</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"><b>Address</b></label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="inputEmail3"></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>State</b></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"><b>Country</b></label>
+                <div class="col-sm-10">
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose your country</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+
+	    <table>
+            <tr><th><label>Languages Known</label></th> 
+            <td width="82%"><input type="checkbox"><label style="margin-left:5px;margin-right:5px;">English</label><input type="checkbox"><label style="margin-left:5px;margin-right:5px;">Kannada</label><input type="checkbox"><label style="margin-left:5px;margin-right:5px;">Hindi</label><input type="checkbox"><label style="margin-left:5px;margin-right:5px;">Telugu</label></td></tr><tr><td><br></td></tr>
+            <tr><td colspan="2"><input type="checkbox"><label>Hereby I declare all the given details are true</label></td></tr>
+            <tr><td colspan="2" align="right"><label>Log in to <a href="https://ethnus.com/">Ethnus</a> website</label></td></tr>
+        </table>
+            <button type="submit" style="color:white;background-color:red;border-size:2px;border-color:black;border-radius:12px;"><u>REGISTER</u></button>
+        </form>
+    </div></center>
+</body>
+
+</html>

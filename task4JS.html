@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task 4</title>
+</head>
+<body>
+    <h1>Displaying Date and Time</h1>
+
+    <button onclick="displayDate()">Show Date</button>
+
+    <p id="dateResult"></p>
+
+    <button onclick="displayDateTime()">Show Time</button>
+
+    <p id="dateTimeResult"></p>
+
+    <script>
+        function displayDateTime() {
+            var currentDateTime = new Date();
+            var formattedDateTime = currentDateTime.toLocaleString();
+            document.getElementById("dateTimeResult").textContent = formattedDateTime + " GMT+0530 (India Standard Time)";
+        }
+        function displayDate() {
+	    let date = new Date().toLocaleDateString();
+            document.getElementById("dateResult").textContent = date;
+        }
+    </script>
+</body>
+</html>

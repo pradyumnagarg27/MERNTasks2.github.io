@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Task 3</title>
+</head>
+<body>
+    <h1>JavaScript Function To Multiply And Divide Two Numbers</h1>
+    
+    <label for="num1">1st Number :</label>
+    <input type="text" id="num1"><br><br>
+    
+    <label for="num2">2nd Number :</label>
+    <input type="text" id="num2"><br><br>
+    
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    
+    <p id="multiplyResult"></p>
+    <p id="divideResult"></p>
+
+    <script>
+        function multiply() {
+
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                var multiplicationResult = num1 * num2;
+                document.getElementById("multiplyResult").textContent = "Multiplication : "+multiplicationResult;
+            } else {
+                document.getElementById("multiplyResult").textContent = "Invalid Input";
+            }
+        }
+        function divide() {
+
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                var divisionResult = num1 / num2;
+                document.getElementById("divideResult").textContent = "Division : "+divisionResult;
+            } else {
+                document.getElementById("divideResult").textContent = "Invalid Input";
+            }
+        }
+    </script>
+</body>
+</html>
